@@ -1,0 +1,139 @@
+EGYPT TOUR: include ./topics/tips-for-travellers.m======
+
+
+Tips for Visitors
+Here are some useful tips for visitors. Please click on one of the following options to find out more:
+https://cdn.pixabay.com/photo/2019/06/26/12/25/tomb-4300251_960_720.jpg 
+
+> When to Go?
+The best time to go to Egypt is surely between October and April. The tourist high season is considered from December to February, so if you come slightly out of season you will also enjoy cheaper hotel prices and fewer crowds. Also, make sure to avoid traveling during Ramadan.
+In summer, temperatures can get up to 45 degrees Celsius in dusty, so Luxor and Aswan are unbearable. 
+https://cdn.pixabay.com/photo/2017/07/13/09/04/pyramids-2499780_960_720.jpg
+
+
+> How Much Does it Cost?
+Not much. Egypt is comparatively cheap if you’re coming from a developed nation. For a bed in a dorm, you’ll usually pay about $4, guesthouse would be about $12 per night and a higher standard shouldn’t be more than $150. If you’re backpacking you could get by for $30 a day without any issues.
+https://cdn.pixabay.com/photo/2016/04/21/19/10/egypt-1344318_960_720.jpg
+
+
+>Food in Egypt
+The most traditional dish – Koshary. It’s a mix of rice, macaroni, and lentils topped with tomato-vinegar sauce and fried onions.
+https://cdn.pixabay.com/photo/2015/02/25/17/33/kitchen-649110_960_720.jpg
+
+
+
+>Back to Menu
+
+++++++++++++++++++++++++
+
+
+\ @author: nothingelse
+\ @date: 28 Nov 2021
+\
+\ credit to content - Ultimate Guide to Visiting Egypt
+\ https://annaeverywhere.com/egypt-travel-guide/
+\
+: tips-visitor ( -- "s" ) 
+    {{
+        "When to Go?"
+        "How Much Does it Cost?"
+        "Food in Egypt"
+        "Back to Main Menu"
+    }} mk-menu
+;
+\ "mk-menu" function is referenced in uiux.m
+
+\ intro picture
+: img-tips-visitor "https://cdn.pixabay.com/photo/2019/06/26/12/25/tomb-4300251_960_720.jpg" 
+;
+
+\ intro to tips for Visitor room
+: tipsVisitor ( -- "s" )
+    tips-visitor ctx{ threeTips }
+    
+    {{
+        img-tips-visitor
+    }} randomize head ctx{ tipsVisitor }
+    
+    q{  
+        <img 
+            src="#{tipsVisitor}"
+            width="465px"
+            style="border-radius:6px;border:1px solid #AAA"
+        >
+        <h1>Tips for Visitors</h1>
+        <p>
+        <b>Here are some useful tips for visitors.</b> 
+        <p>Please click on one of the following options to find out more.
+        #{threeTips}
+    }q
+;
+
+\ Second, use a template to trigger "tips-for-travellers.m"
+Q: tips for visitors
+A: ${tipsVisitor}
+K: $clear tipsvisitorKey
+--
+
+\ Thirdly, a way to return to the Main Menu
+Q: Back to Main Menu
+A: ${main-menu}
+K: $clear
+--
+
+\ keep all the responses here
+room: tipsvisitorKey
+    Q: When to Go?
+    \ MM https://cdn.pixabay.com/photo/2017/07/13/09/04/pyramids-2499780_960_720.jpg
+    MM The best time to go to Egypt is surely between October and April. The tourist high season is considered from December to February, so if you come slightly out of season you will also enjoy cheaper hotel prices and fewer crowds. Also, make sure to avoid traveling during Ramadan.
+    M. ${tips-visitor}
+    --
+    
+    Q: How Much Does it Cost?
+    \ MM https://cdn.pixabay.com/photo/2016/04/21/19/10/egypt-1344318_960_720.jpg
+    MM Not much. Egypt is comparatively cheap if you’re coming from a developed nation. For a bed in a dorm, you’ll usually pay about $4, guesthouse would be about $12 per night and a higher standard shouldn’t be more than $150. If you’re backpacking you could get by for $30 a day without any issues.
+    M. ${tips-visitor}
+    --
+    
+    Q: Food in Egypt
+    \ MM https://cdn.pixabay.com/photo/2015/02/25/17/33/kitchen-649110_960_720.jpg
+    MM The most traditional dish – Koshary. It’s a mix of rice, macaroni, and lentils topped with tomato-vinegar sauce and fried onions.
+    M. ${tips-visitor}
+    --
+end-room    
+
+
+
+
+
+
+++++++++++++++++++++++++
+
+
++Tips for Visitors
+Here are some useful tips for visitors. Please click on one of the following options to find out more:
+
+
+Transport
+Language
+Currency
+Emergency
+Back to Menu
+
+The mode of transport in Egypt depends on where you are going. If you are travelling to the city, a private hired car will be recommended. If you are venturing into the desert, riding a camel will definitely spice up your experience.
+
+The national language in Egypt is Arabic. However, tourists will rarely find a problem communicating as English is widely spoken in hotels and shops, with French a close second, and many staff in tourist areas also speaking German or Italian. 
+
+The unit of currency is the Egyptian Pound (LE), which is divided into 100 piasters. Pounds are issued in notes of 1, 5, 10, 20, 50, 100 and 200. Coins are issued in denominations of LE1 and 25 and 50 piasters. 
+
+
+Visa
+Best time to visit
+VTL
+Back to main
+
+Singaporeans travelling to Egypt are required to apply for visa. The maximum duration allowed for a single trip is 30 days. Singaporeans can obtain an Egyptian electronic visa online. 
+
+Best time to visit Egypt is from September to April when temperatures are lower. March, April and September are also good if you want to avoid crowd. 
+
+All arrivals to Egypt must provide a negative PCR test certificate taken within 72 hours of departure. Certificates must be written in English and Arabic and be stamped by an accredited laboratory. Passengers with a COVID-19 vaccination certificate stating complete vaccination at least 14 days before travel are exempt from testing. 
